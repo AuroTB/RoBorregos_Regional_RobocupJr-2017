@@ -121,17 +121,10 @@ void setup() {
 }
 
 void loop() {
-//   if (irrecv.decode(&results)) {
-//    botones();
-//    Serial.println(results.value);
-//    irrecv.resume(); // Receive the next value
-//  }
-
-//  euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
-//  ajusteAngular(euler.x());
-//  acomodoAngular(euler.x());
-//  anguloPasado = euler.x();
-//    findIt();
-//    pared();
-      showTsopCerca();
+  euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+  ajusteAngular(euler.x());
+  acomodoAngular(euler.x());
+  anguloPasado = euler.x();
+    findIt();
+    pared();
 }
